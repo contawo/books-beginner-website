@@ -152,6 +152,9 @@ body {
   .book-items {
     grid-template-columns: repeat(4, 1fr);
   }
+  .picture-content {
+    height: 29rem;
+  }
 }
 
 /*! ------------------- Footer -----------------------  */
