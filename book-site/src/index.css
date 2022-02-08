@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: .5em;
+  padding-top: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*! ------------ Header ------------------- */
+.heading-title {
+  width: 95%;
+  margin: 0 auto;
+}
+.title-cont {
+  padding: .5em 1em .5em .5em;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.header-content {
+  background: url(./images/orange-bg.jpg);
+  background-size: cover;
+  width: 95%;
+  border-radius: 20px;
+  margin: 0 auto;
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  box-shadow: 0px 4px 20px 10px rgba(0, 0, 0, 0.25);
+}
+.headings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 75%;
+}
+.main-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.call-to-action {
+  font-size: 2rem;
+  color: #7E7E7E;
+}
+
+.request {
+  display: flex;
+  gap: .5em;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  height: 25%;
+  cursor: pointer;
+}
+.request:hover {
+  color: #00AF12;
+}
+.request-message {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+/** ----------------- Responsize header -----------------  */
+@media (min-width: 765px) {
+  .title-cont {
+    font-size: 2.1rem;
+  }
+  .header-content {
+    height: 20em;
+  }
+  .main-heading {
+    font-size: 3.4rem;
+  }
+  .call-to-action {
+    font-size: 2.6rem;
+  }
+  .request-message,
+  .request > i {
+    font-size: 1.6rem;
+  }
+}
+
+/*! ---------------------- Main Content --------------------- */
+.main-content {
+  width: 95%;
+  margin: 0 auto;
+}
+.main-title {
+  padding: .5em 1em .5em .5em;
+  font-size: 2rem;
+}
+.book-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em;
+  padding: 1em;
+}
+.picture-content {
+  /* background: grey; */
+  border-radius: 20px;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+}
+.book-div {
+  background: black;
+  height: 85%;
+  border-radius: 20px;
+  box-shadow: 2px 4px 10px 5px rgba(0, 0, 0, 0.25);
+}
+/*! -------------- Images ----------------------- */
+.accounting {
+  background: url(./images/accounting.jpg);
+  background-size: cover;
+}
+.business-law {
+  background: url(./images/business\ law.jpg);
+  background-size: cover;
+}
+.business-manage {
+  background: url(./images/business\ manage.jpg);
+  background-size: cover;
+}
+.economics {
+  background: url(./images/economics.jpg);
+  background-size: cover;
+}
+
+.book-details {
+  display: flex;
+  height: 15%;
+  justify-content: space-between;
+  padding: .5em;
+  font-weight: 700;
+}
+
+.quality {
+  color: #b96f00;
+}
+/** -------------------- Responsize Main --------------------  */
+@media (min-width: 765px) {
+  .book-items {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*! ------------------- Footer -----------------------  */
+.footer {
+  background: url(./images/pawel-czerwinski-SOiSsilz3Eg-unsplash.jpg);
+  background-size: cover;
+  width: 95%;
+  border-radius: 20px;
+  margin: auto;
+  height: 8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em;
+  color: #fff;
+  box-shadow: 0px 4px 20px 10px rgba(0, 0, 0, 0.25);
+}
+.author {
+  font-size: 1.2rem;
+}
+.footer > p {
+  font-size: .8rem;
+}
